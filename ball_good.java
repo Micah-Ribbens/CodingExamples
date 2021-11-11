@@ -6,7 +6,7 @@ public class ball_good {
     boolean is_moving_up = false;
     public void movement() {
         int change = VelocityCalculator.calc_distance(forwards_velocity);
-        x_coordinate += change ? is_moving_right : -change;
         y_coordinate += change ? is_moving_up : -change;
+        x_coordinate += change ? is_moving_right : -change;
     }
 }
